@@ -32,9 +32,42 @@ dependencies:
     sdk: flutter
 
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  
+  # Provides the Cupertino icons used in iOS-style apps.
   cupertino_icons: ^1.0.2
+  
+  # A highly customizable color scheme package for Flutter, providing several predefined themes and the ability to create your own.
+  flex_color_scheme: ^6.1.2
+  
+  # A routing library for Flutter that generates type-safe routes and named routes, simplifying navigation in your app.
+  auto_route: ^6.3.0
+  
+  # A state management solution for Flutter that allows you to easily share state between widgets and manage state changes.
+  provider: ^6.0.5
+  
+  # A service locator library for Flutter that allows you to easily retrieve dependencies from anywhere in your app.
+  get_it: ^7.2.0
+  
+  # A package for making HTTP requests in Flutter, providing a high-level API and support for various HTTP features.
+  http: ^0.13.5
+  
+  # A functional programming library for Dart that provides tools for handling common programming tasks such as optionals, error handling, and more.
+  dartz: ^0.10.1
+  
+  # A library for comparing objects in Dart, providing a simple way to implement equality and hashcode methods.
+  equatable: ^2.0.5
+  
+  # A package that loads environment variables from a .env file in your Flutter project, allowing you to store configuration data outside your code.
+  flutter_dotenv: ^5.0.2
+  
+  # A package for internationalizing Flutter apps, providing support for formatting dates, times, numbers, and more.
+  intl: ^0.18.1
+  
+  # A package for getting the device's location in Flutter, providing high-level APIs for getting the current location and tracking location changes.
+  geolocator: ^9.0.2
+  
+  # A package for checking internet connectivity in Flutter, providing high-level APIs for checking network availability and monitoring connection changes.
+  internet_connection_checker: ^1.0.0+1
 
 dev_dependencies:
   flutter_test:
@@ -46,6 +79,13 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+
+  # A tool for generating files for Dart packages and apps, used for building and compiling code during development.
+  build_runner: ^2.3.3
+    
+  # A code generator for the AutoRoute package, used to generate type-safe router helpers for your app's navigation system.
+  auto_route_generator: ^6.0.0
+    
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
