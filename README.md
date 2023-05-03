@@ -2,8 +2,8 @@
 
 This is a Flutter weather app that includes two main screens: DefaultWeatherPage and SearchWeatherPage.
 
-* The DefaultWeatherPage takes device geolocation to request the current weather data from an API.
-* The SearchWeatherPage allows the user to input a location and provides autocomplete suggestions for the user's input. If the user selects one of the suggested locations, the app can retrieve its coordinates since the autocomplete API provides an object containing the address coordinates. In the second screen, the user just needs to select a date and click the search button to get the forecast result.
+* The DefaultWeatherPage takes device geolocation to request the current weather data from an [API](https://www.weatherapi.com/) .
+* The SearchWeatherPage allows the user to input a location and provides autocomplete suggestions for the user's input. If the user selects one of the suggested locations, the app can retrieve its coordinates since the [autocomplete API](https://www.geoapify.com/address-autocomplete) provides an object containing the address coordinates. In the second screen, the user just needs to select a date and click the search button to get the forecast result.
 
 This app follows the clean architecture pattern, with the following folders in the `lib` directory:
 
@@ -13,6 +13,21 @@ This app follows the clean architecture pattern, with the following folders in t
 * `domain`
 * `foundation`
 * `presentation`
+
+##Getting Started
+To run this app, you will need to create a .env file in the lib folder and add your API keys to it. The following variables are required:
+
+FORECAST_API_KEY: Your API key for the weather API.
+AUTOCOMPLETE_API_KEY: Your API key for the autocomplete API.
+
+##Environment
+To run this app correctly, you will need to create an .env file in the lib directory and add the API keys to it. Update the pubspec.yaml file to reflect these changes. Otherwise, the app will not run correctly and errors will occur.
+```
+assets:
+   - ./.env
+```
+
+Make sure to add the dependencies listed in the pubspec.yaml file to your project before running the app.
 
 ## Dependencies
 
@@ -47,9 +62,17 @@ dev_dependencies:
   build_runner: ^2.3.3
   auto_route_generator: ^6.0.0
 
-
-##Environment
-To run this app correctly, you will need to create an .env file in the lib directory and add the API keys to it. Update the pubspec.yaml file to reflect these changes. Otherwise, the app will not run correctly and errors will occur.
-
-assets:
-   - ./.env
+```
+##Running the App
+To run the app, use the following command in the terminal:
+```
+flutter run
+```
+##Generating Files
+To generate files for the app, use the following command in the terminal:
+```
+flutter packages pub run build_runner build --delete-conflicting-outputs
+```
+##License
+This app is licensed under the MIT License. See the LICENSE file for more information.
+This command generates files for the auto_route package.
