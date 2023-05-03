@@ -7,18 +7,24 @@ This is a Flutter weather app that includes two main screens: DefaultWeatherPage
 ## Screenshot
 
 ### Light Theme
-![Default Page-Light](assets/images/app_screenshots/default_page_light.jpg)
-![Autocomplete-Light](assets/images/app_screenshots/autocomplete_light.jpg)
-![Search Page-Light](assets/images/app_screenshots/search_page_light.jpg)
-![Pick Date-Light](assets/images/app_screenshots/pick_date_light.jpg)
-![Search Page Full-Light](assets/images/app_screenshots/search_page_full_light.jpg)
+<!-- Light Theme -->
+<p align="center">
+  <img src="assets/images/app_screenshots/default_page_light.jpg" width="200"/>
+  <img src="assets/images/app_screenshots/autocomplete_light.jpg" width="200"/>
+  <img src="assets/images/app_screenshots/search_page_light.jpg" width="200"/>
+  <img src="assets/images/app_screenshots/pick_date_light.jpg" width="200"/>
+  <img src="assets/images/app_screenshots/search_page_full_light.jpg" width="200"/>
+</p>
 
 ### Dark Theme
-![Default Page-Dark](assets/images/app_screenshots/default_page_dark.jpg)
-![Autocomplete-Dark](assets/images/app_screenshots/autocomplete_dark.jpg)
-![Search Page-Dark](assets/images/app_screenshots/search_page_dark.jpg)
-![Pick Date-Dark](assets/images/app_screenshots/pick_date_dark.jpg)
-![Search Page Full-Dark](assets/images/app_screenshots/search_page_full_dark.jpg)
+<!-- Dark Theme -->
+<p align="center">
+  <img src="assets/images/app_screenshots/default_page_dark.jpg" width="200"/>
+  <img src="assets/images/app_screenshots/autocomplete_dark.jpg" width="200"/>
+  <img src="assets/images/app_screenshots/search_page_dark.jpg" width="200"/>
+  <img src="assets/images/app_screenshots/pick_date_dark.jpg" width="200"/>
+  <img src="assets/images/app_screenshots/search_page_full_dark.jpg" width="200"/>
+</p>
 This app follows the clean architecture pattern, with the following folders in the `lib` directory:
 
 * `locator.dart`
