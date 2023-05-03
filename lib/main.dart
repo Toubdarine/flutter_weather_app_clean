@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
+import 'package:flutter/services.dart';
 
 import 'presentation/routing/router.dart';
 import 'locator.dart';
@@ -15,6 +16,10 @@ class MyApp extends StatelessWidget {
   static final _appRouter = AppRouter();
   @override
   Widget build(BuildContext context) {
+    // Set the allowed screen orientation to portraitUp only
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: FlexThemeData.light(

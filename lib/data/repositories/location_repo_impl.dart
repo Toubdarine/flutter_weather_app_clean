@@ -2,10 +2,11 @@ import 'package:dartz/dartz.dart';
 import 'package:geolocator/geolocator.dart';
 
 import '../../domain/interfaces/repositories/location_repo.dart';
+import '../../foundation/failures/failure.dart';
 
 class LocationRepositoryImpl implements LocationRepository {
   @override
-  Future<Either<Exception, Position>> getCurrentLocation() async {
+  Future<Either<Failure, Position>> getCurrentLocation() async {
     bool serviceEnabled;
     LocationPermission permission;
 
@@ -15,7 +16,7 @@ class LocationRepositoryImpl implements LocationRepository {
       // Location services are not enabled don't continue
       // accessing the position and request users of the
       // App to enable the location services.
-      return Left(Exception('Location services are disabled.'));
+      return Left(LocationFailure('Location services are disabled.'));
     }
 
     permission = await Geolocator.checkPermission();
@@ -27,13 +28,13 @@ class LocationRepositoryImpl implements LocationRepository {
         // Android's shouldShowRequestPermissionRationale
         // returned true. According to Android guidelines
         // your App should show an explanatory UI now.
-        return Left(Exception('Location permissions are denied'));
+        return Left(LocationFailure('Location permissions are denied'));
       }
     }
 
     if (permission == LocationPermission.deniedForever) {
       // Permissions are denied forever, handle appropriately.
-      return Left(Exception(
+      return Left(LocationFailure(
           'Location permissions are permanently denied, we cannot request permissions.'));
     }
 
