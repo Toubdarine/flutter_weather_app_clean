@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
+
 import 'presentation/routing/router.dart';
+import 'locator.dart';
 
 void main() {
+  setupLocator();
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   static final _appRouter = AppRouter();
   @override
   Widget build(BuildContext context) {
