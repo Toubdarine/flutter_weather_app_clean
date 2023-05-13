@@ -81,7 +81,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   build_runner: ^2.3.3
   auto_route_generator: ^6.0.0
-
+  mockito: ^5.4.0
+  test: ^1.22.0
 ```
 ## Running the App
 To run the app, use the following command in the terminal:

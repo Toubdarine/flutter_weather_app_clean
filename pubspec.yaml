@@ -68,6 +68,7 @@ dependencies:
   
   # A package for checking internet connectivity in Flutter, providing high-level APIs for checking network availability and monitoring connection changes.
   internet_connection_checker: ^1.0.0+1
+  
 
 dev_dependencies:
   flutter_test:
@@ -85,6 +86,12 @@ dev_dependencies:
     
   # A code generator for the AutoRoute package, used to generate type-safe router helpers for your app's navigation system.
   auto_route_generator: ^6.0.0
+
+  # mockito is a powerful Dart library for mocking objects and testing the interactions between them
+  mockito: ^5.4.0
+  
+  # test is a Dart library for writing unit tests and integration tests
+  test: ^1.22.0
     
 
 # For information on the generic Dart part of this file, see the
