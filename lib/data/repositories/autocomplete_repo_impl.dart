@@ -17,9 +17,9 @@ class AutoCompleteRepositoryImpl extends AutoCompleteRepository {
   Future<Either<ServerFailure, List<AddressEntity>>> getSuggestions(String text,
       [String? apiKey]) async {
     await dotenv.load(fileName: "./.env");
-    String _apiKey = apiKey ?? dotenv.env['AUTOCOMPLETE_API_KEY']!;
+    String key = apiKey ?? dotenv.env['AUTOCOMPLETE_API_KEY']!;
     String autoCompleteApiUrl =
-        "https://api.geoapify.com/v1/geocode/autocomplete?text=$text&apiKey=$_apiKey";
+        "https://api.geoapify.com/v1/geocode/autocomplete?text=$text&apiKey=$key";
     Uri uri = Uri.parse(
       autoCompleteApiUrl,
     );

@@ -21,7 +21,7 @@ void main() {
     const tLatitude = 48.8566;
     const tLongitude = 2.3522;
     const tDate = '2023-05-12';
-    WeatherDataEntity tWeatherData = WeatherDataEntity(
+    WeatherDataEntity tWeatherData = const WeatherDataEntity(
         dateTime: tDate,
         locationName: "Paris",
         localTime: "2023-05-12 16:52",

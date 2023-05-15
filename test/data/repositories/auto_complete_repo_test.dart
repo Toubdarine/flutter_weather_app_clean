@@ -101,14 +101,6 @@ void main() {
           Right<Failure, http.Response>(http.Response(suggestionJson, 200)));
 
       final result = await repository.getSuggestions('paris', 'mockApiKey');
-      final expectedList = [
-        AddressEntity(
-            city: 'Paris',
-            name: 'Paris',
-            country: 'France',
-            latitude: 48.8534951,
-            longitude: 2.3483915)
-      ];
       final actualList = result.getOrElse(() => []);
       expect(result.isRight(), true);
       expect(actualList, tList);

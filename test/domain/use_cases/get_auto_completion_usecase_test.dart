@@ -23,7 +23,7 @@ void main() {
 
   group('GetAutoCompletion', () {
     const tText = 'Paris';
-    final AddressEntity tAddress = AddressEntity(
+    const AddressEntity tAddress = AddressEntity(
       country: 'France',
       latitude: 0.0,
       longitude: 0.0,

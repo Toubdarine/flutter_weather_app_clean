@@ -24,7 +24,6 @@ void main() {
   group('GetCurrentLocation', () {
     const tLatitude = 48.8566;
     const tLongitude = 2.3522;
-    const tDate = '2023-05-12';
     Position tPosition = Position(
       latitude: tLatitude,
       longitude: tLongitude,

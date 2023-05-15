@@ -1,16 +1,12 @@
 import 'dart:convert';
-import 'package:flutter_weather_app_clean/data/models/weather_data_model.dart';
-import 'package:flutter_weather_app_clean/data/repositories/weather_repo_impl.dart';
-import 'package:flutter_weather_app_clean/domain/entites/address_entity.dart';
-import 'package:flutter_weather_app_clean/domain/entites/weather_data_entity.dart';
 import 'package:mockito/mockito.dart';
-import 'package:mockito/annotations.dart';
 import 'package:test/test.dart';
 import 'package:http/http.dart' as http;
 import 'package:dartz/dartz.dart';
 
-import 'package:flutter_weather_app_clean/data/repositories/autocomplete_repo_impl.dart';
-
+import 'package:flutter_weather_app_clean/data/models/weather_data_model.dart';
+import 'package:flutter_weather_app_clean/data/repositories/weather_repo_impl.dart';
+import 'package:flutter_weather_app_clean/domain/entites/weather_data_entity.dart';
 import 'package:flutter_weather_app_clean/foundation/failures/failure.dart';
 import 'auto_complete_repo_test.mocks.dart';
 
@@ -25,15 +21,15 @@ void main() {
   });
 
   group('WeatherRepositoryImpl/getWeatherForecaste', () {
-    final String apiKey = 'apiKey';
+    const String apiKey = 'apiKey';
 
-    final tLatitude = 48.86;
-    final tLongitude = 2.35;
-    final String tDate = '18-05-2023';
-    final days = 2;
-    final aqi = 'yes';
-    final alerts = 'no';
-    final apiUrl =
+    const double tLatitude = 48.86;
+    const double tLongitude = 2.35;
+    const String tDate = '18-05-2023';
+    const int days = 2;
+    const String aqi = 'yes';
+    const String alerts = 'no';
+    const apiUrl =
         'http://api.weatherapi.com/v1/forecast.json?key=$apiKey&q=$tLatitude,$tLongitude&days=$days&aqi=$aqi&alerts=$alerts&dt=$tDate';
     final tResponse = {
       "location": {

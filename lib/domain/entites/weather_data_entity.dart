@@ -7,7 +7,7 @@ class WeatherDataEntity extends Equatable {
   final String sunRize;
   final String sunset;
   final double temperature;
-  String localEpoch;
+  final String localEpoch;
   final double feelsLike;
   final int humidity;
   final double pressure;
@@ -21,7 +21,7 @@ class WeatherDataEntity extends Equatable {
   final int precipitation;
   final String iconUrl;
   final List<HourEntity> hourList;
-  WeatherDataEntity(
+  const WeatherDataEntity(
       {required this.dateTime,
       required this.locationName,
       required this.localTime,
