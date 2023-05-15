@@ -57,9 +57,9 @@ class WeatherRepositoryImpl extends WeatherRepository {
   @override
   Future<Either<Failure, WeatherDataEntity>> getWeatherForecaste(
       double latitude, double longitude,
-      [String? date]) async {
+      [String? date, String? apiKey]) async {
     await dotenv.load(fileName: "./.env");
-    String forcastApiKey = dotenv.env['FORCAST_API_KEY']!;
+    String forcastApiKey = apiKey ?? dotenv.env['FORCAST_API_KEY']!;
     String forecasteApiUrl =
         "http://api.weatherapi.com/v1/forecast.json?key=$forcastApiKey";
     Uri uri;
@@ -75,10 +75,10 @@ class WeatherRepositoryImpl extends WeatherRepository {
 
     try {
       final response = await apiClient.getReq(uri);
-      Either<Failure, WeatherDataEntity> result;
+      Either<ServerFailure, WeatherDataEntity> result;
       result = response.fold(
         (failure) {
-          return Left(failure);
+          return Left(ServerFailure(failure.toString()));
         },
         (response) {
           final body = jsonDecode(response.body);
