@@ -69,6 +69,7 @@ dependencies:
   # A package for checking internet connectivity in Flutter, providing high-level APIs for checking network availability and monitoring connection changes.
   internet_connection_checker: ^1.0.0+1
   
+  
 
 dev_dependencies:
   flutter_test:

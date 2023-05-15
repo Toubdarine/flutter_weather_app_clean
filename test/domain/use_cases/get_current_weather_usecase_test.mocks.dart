@@ -87,6 +87,7 @@ class MockWeatherRepository extends _i1.Mock implements _i3.WeatherRepository {
     double? latitude,
     double? longitude, [
     String? date,
+    String? apiKey,
   ]) =>
       (super.noSuchMethod(
         Invocation.method(
@@ -95,6 +96,7 @@ class MockWeatherRepository extends _i1.Mock implements _i3.WeatherRepository {
             latitude,
             longitude,
             date,
+            apiKey,
           ],
         ),
         returnValue:
@@ -107,6 +109,7 @@ class MockWeatherRepository extends _i1.Mock implements _i3.WeatherRepository {
               latitude,
               longitude,
               date,
+              apiKey,
             ],
           ),
         )),
@@ -120,6 +123,7 @@ class MockWeatherRepository extends _i1.Mock implements _i3.WeatherRepository {
               latitude,
               longitude,
               date,
+              apiKey,
             ],
           ),
         )),

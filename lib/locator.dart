@@ -1,6 +1,9 @@
+import 'package:geolocator/geolocator.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:get_it/get_it.dart';
 
+import 'data/geolocator_impl.dart';
+import 'domain/interfaces/geolocator.dart';
 import 'domain/interfaces/network/api_client.dart';
 import 'domain/interfaces/network/network_info.dart';
 import 'domain/use_cases/get_auto_completion_usecase.dart';
@@ -29,13 +32,14 @@ void setupLocator() {
   // ApiClient Registration
   locator.registerLazySingleton<ApiClient>(
       () => ApiClientImpl(networkInfo: locator.get<NetworkInfo>()));
-
+// GeoLocator Registration
+  locator.registerLazySingleton<IGeolocator>(() => GeolocatorWrapper());
   //Repositories Registration
   locator.registerLazySingleton<WeatherRepository>(
       () => WeatherRepositoryImpl(locator.get<ApiClient>()));
 
   locator.registerLazySingleton<LocationRepository>(
-      () => LocationRepositoryImpl());
+      () => LocationRepositoryImpl(locator.get<IGeolocator>()));
 
   locator.registerLazySingleton<AutoCompleteRepository>(
       () => AutoCompleteRepositoryImpl(locator.get<ApiClient>()));

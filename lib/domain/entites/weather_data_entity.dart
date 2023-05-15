@@ -1,6 +1,8 @@
+import 'package:equatable/equatable.dart';
+
 import 'hour_entity.dart';
 
-class WeatherDataEntity {
+class WeatherDataEntity extends Equatable {
   final String dateTime;
   final String sunRize;
   final String sunset;
@@ -38,4 +40,7 @@ class WeatherDataEntity {
       required this.precipitation,
       required this.iconUrl,
       required this.hourList});
+
+  @override
+  List<Object?> get props => [];
 }

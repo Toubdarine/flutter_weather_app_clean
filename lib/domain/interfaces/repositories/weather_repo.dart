@@ -10,5 +10,5 @@ abstract class WeatherRepository {
 
   Future<Either<Failure, WeatherDataEntity>> getWeatherForecaste(
       double latitude, double longitude,
-      [String? date]);
+      [String? date, String apiKey]);
 }

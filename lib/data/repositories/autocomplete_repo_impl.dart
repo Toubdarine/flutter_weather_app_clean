@@ -14,22 +14,22 @@ class AutoCompleteRepositoryImpl extends AutoCompleteRepository {
   AutoCompleteRepositoryImpl(this.apiClient);
 
   @override
-  Future<Either<Failure, List<AddressEntity>>> getSuggestions(
-      String text) async {
+  Future<Either<ServerFailure, List<AddressEntity>>> getSuggestions(String text,
+      [String? apiKey]) async {
     await dotenv.load(fileName: "./.env");
-    String apiKey = dotenv.env['AUTOCOMPLETE_API_KEY']!;
+    String _apiKey = apiKey ?? dotenv.env['AUTOCOMPLETE_API_KEY']!;
     String autoCompleteApiUrl =
-        "https://api.geoapify.com/v1/geocode/autocomplete?text=$text&apiKey=$apiKey";
+        "https://api.geoapify.com/v1/geocode/autocomplete?text=$text&apiKey=$_apiKey";
     Uri uri = Uri.parse(
       autoCompleteApiUrl,
     );
 
     try {
       final response = await apiClient.getReq(uri);
-      Either<Failure, List<AddressEntity>> result;
+      Either<ServerFailure, List<AddressEntity>> result;
       result = response.fold(
         (failure) {
-          return Left(failure);
+          return Left(ServerFailure(failure.toString()));
         },
         (response) {
           final body = jsonDecode(response.body);
