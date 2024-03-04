@@ -33,6 +33,8 @@ void main() {
       speedAccuracy: 0.0,
       speed: 0.0,
       heading: 0.0,
+      altitudeAccuracy: 1.0,
+      headingAccuracy: 1.0,
     );
 
     test(

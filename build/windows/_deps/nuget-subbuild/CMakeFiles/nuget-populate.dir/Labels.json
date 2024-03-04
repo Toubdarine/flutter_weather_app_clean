@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/nuget-populate"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/2f242cc094a1f8ffbc26ba80d95c3c20/nuget-populate.rule"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/69d92714cc8e51c0108e345a47921b7a/nuget-populate-complete.rule"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/61c813389de62be5a098a2ddcee123fd/nuget-populate-build.rule"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/61c813389de62be5a098a2ddcee123fd/nuget-populate-configure.rule"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/61c813389de62be5a098a2ddcee123fd/nuget-populate-copyfile.rule"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/61c813389de62be5a098a2ddcee123fd/nuget-populate-download.rule"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/61c813389de62be5a098a2ddcee123fd/nuget-populate-install.rule"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/61c813389de62be5a098a2ddcee123fd/nuget-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/61c813389de62be5a098a2ddcee123fd/nuget-populate-patch.rule"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/61c813389de62be5a098a2ddcee123fd/nuget-populate-test.rule"
+		},
+		{
+			"file" : "D:/flutter_projects/flutter_weather_app_clean/build/windows/_deps/nuget-subbuild/CMakeFiles/61c813389de62be5a098a2ddcee123fd/nuget-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nuget-populate"
+		],
+		"name" : "nuget-populate"
+	}
+}

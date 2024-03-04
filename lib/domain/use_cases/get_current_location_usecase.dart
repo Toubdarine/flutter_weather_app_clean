@@ -9,6 +9,7 @@ class GetCurrentLocation {
   GetCurrentLocation({required this.repository});
   Future<Either<Failure, Position>> execute() async {
     var response = await repository.getCurrentLocation();
+
     Either<Failure, Position> result = response.fold((exception) {
       return Left(LocationFailure('Location Failure'));
     }, (response) {

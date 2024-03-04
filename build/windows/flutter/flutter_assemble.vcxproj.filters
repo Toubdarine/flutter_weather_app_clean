@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\CMakeFiles\a6890936e5ac02eb709018e363d974b7\flutter_windows.dll.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\CMakeFiles\db5f7efc029dc684291f749255cd25f4\flutter_assemble.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\flutter\CMakeFiles\flutter_assemble" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E0B153A7-3A49-36F0-96A9-E1D78C6DE307}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

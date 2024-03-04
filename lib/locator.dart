@@ -1,4 +1,3 @@
-import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:get_it/get_it.dart';
 
 import 'data/geolocator_impl.dart';
@@ -25,8 +24,7 @@ final locator = GetIt.instance;
 
 void setupLocator() {
   //NetworkInfo Registration
-  locator.registerLazySingleton<NetworkInfo>(
-      () => NetworkInfoImpl(InternetConnectionChecker()));
+  locator.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl());
 
   // ApiClient Registration
   locator.registerLazySingleton<ApiClient>(

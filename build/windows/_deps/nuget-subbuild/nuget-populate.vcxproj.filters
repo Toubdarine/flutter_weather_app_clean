@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\61c813389de62be5a098a2ddcee123fd\nuget-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\61c813389de62be5a098a2ddcee123fd\nuget-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\61c813389de62be5a098a2ddcee123fd\nuget-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\61c813389de62be5a098a2ddcee123fd\nuget-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\61c813389de62be5a098a2ddcee123fd\nuget-populate-copyfile.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\61c813389de62be5a098a2ddcee123fd\nuget-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\61c813389de62be5a098a2ddcee123fd\nuget-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\61c813389de62be5a098a2ddcee123fd\nuget-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\61c813389de62be5a098a2ddcee123fd\nuget-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\69d92714cc8e51c0108e345a47921b7a\nuget-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\2f242cc094a1f8ffbc26ba80d95c3c20\nuget-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\flutter_projects\flutter_weather_app_clean\build\windows\_deps\nuget-subbuild\CMakeFiles\nuget-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2F3A1408-6069-3AF1-B0AB-51613E2182E6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -38,6 +38,8 @@ void main() {
         speed: 0,
         speedAccuracy: 0,
         timestamp: DateTime.now(),
+        altitudeAccuracy: 1.0,
+        headingAccuracy: 1.0,
       );
       when(mockGeolocator.isLocationServiceEnabled())
           .thenAnswer((_) async => true);

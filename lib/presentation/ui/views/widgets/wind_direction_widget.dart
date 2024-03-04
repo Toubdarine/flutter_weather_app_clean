@@ -28,7 +28,7 @@ class WindDirection extends StatelessWidget {
                 value: weatherDataEntity.windDegree.toDouble(),
 
                 // the value in degrees
-                size: width * 0.4, // the size of the widget in pixels
+                size: 120 * 0.4, // the size of the widget in pixels
                 color: Colors.white, // the color of the border and arrow
               ),
               Row(

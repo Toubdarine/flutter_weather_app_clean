@@ -15,7 +15,7 @@ class Day {
   double? totalsnowCm;
   double? avgvisKm;
   double? avgvisMiles;
-  double? avghumidity;
+  int? avghumidity;
   int? dailyWillItRain;
   int? dailyChanceOfRain;
   int? dailyWillItSnow;
@@ -52,11 +52,13 @@ class Day {
     maxtempF = json['maxtemp_f'];
     mintempC = json['mintemp_c'];
     mintempF = json['mintemp_f'];
+
     avgtempC = json['avgtemp_c'];
     avgtempF = json['avgtemp_f'];
     maxwindMph = json['maxwind_mph'];
     maxwindKph = json['maxwind_kph'];
     totalprecipMm = json['totalprecip_mm'];
+
     totalprecipIn = json['totalprecip_in'];
     totalsnowCm = json['totalsnow_cm'];
     avgvisKm = json['avgvis_km'];
@@ -69,6 +71,7 @@ class Day {
     condition = json['condition'] != null
         ? Condition.fromJson(json['condition'])
         : null;
+
     uv = json['uv'];
     airQuality = json['air_quality'] != null
         ? AirQuality.fromJson(json['air_quality'])

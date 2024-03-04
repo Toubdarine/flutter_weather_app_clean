@@ -23,8 +23,11 @@ class Astro {
     sunset = json['sunset'];
     moonrise = json['moonrise'];
     moonset = json['moonset'];
+
     moonPhase = json['moon_phase'];
-    moonIllumination = json['moon_illumination'];
+
+    moonIllumination = json['moon_illumination'].toString();
+
     isMoonUp = json['is_moon_up'];
     isSunUp = json['is_sun_up'];
   }
